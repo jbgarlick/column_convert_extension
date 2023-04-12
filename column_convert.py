@@ -5,7 +5,6 @@ def app():
     with col1:
         convert_column = st.text_area('Convert column')
         convert = st.button('Convert')
-    with col2:
         if convert:
             col_to_list = convert_column.splitlines()
             list_to_str = "','".join(col_to_list)
